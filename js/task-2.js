@@ -1,7 +1,10 @@
 function makeTransaction(country, price, deliveryFee) {
-    country = "Ukraine"
-    price = 100
-    deliveryFee = 50
-    totalPrice = (price + deliveryFee)
-    const message = `Shipping to ${country} will cost ${totalPrice} credits`
-}
+    const totalPrice = price + deliveryFee;
+    alert = `Shipping to ${country} will cost ${totalPrice} credits`;
+
+    return totalPrice
+};
+
+console.log(makeTransaction("Ukraine", 100, 50));
+
+console.log(alert);

@@ -1,6 +1,11 @@
+
 function makeTransaction(quantity, pricePerDroid) {
-    quantity = 5
-    pricePerDroid = 500
-    totalPrice = (quantity * pricePerDroid)
-    const makeText = `You ordered ${quantity} droids worth ${totalPrice} credits!`
+    const totalPrice = quantity * pricePerDroid;
+    alert = `You ordered ${quantity} droids worth ${totalPrice} credits!`
+
+    return totalPrice;
 }
+
+console.log(makeTransaction(10, 100));
+
+console.log(alert)
