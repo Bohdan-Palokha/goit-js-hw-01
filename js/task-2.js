@@ -1,10 +1,8 @@
-function makeTransaction(country, price, deliveryFee) {
+function getShippingMessage(country, price, deliveryFee) {
     const totalPrice = price + deliveryFee;
-    alert = `Shipping to ${country} will cost ${totalPrice} credits`;
+    const alert = `Shipping to ${country} will cost ${totalPrice} credits`;
 
-    return totalPrice
+    return alert;
 };
 
-console.log(makeTransaction("Ukraine", 100, 50));
-
-console.log(alert);
+console.log(getShippingMessage("Ukraine", 100, 50));

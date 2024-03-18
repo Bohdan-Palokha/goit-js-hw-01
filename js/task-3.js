@@ -1,10 +1,7 @@
-function makeTransaction(content, padding, border) {
+function getElementWidth(content, padding, border) {
     const total = (content + (padding * 2) + (border * 2));
+    const alert = `${total}px`;
 
-    alert = `${total}px`;
-
-    return total;
+    return alert;
 };
-console.log(makeTransaction(50, 5, 2));
-
-console.log(alert);
+console.log(getElementWidth(50, 5, 2));
